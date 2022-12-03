@@ -186,6 +186,7 @@ extension NewOrderView {
             })
         }
     }
+    
     // status animation
     private var statusAnimation: some View {
         Group {
@@ -198,6 +199,7 @@ extension NewOrderView {
         }
         .frame(maxWidth: .infinity, alignment: .center)
     }
+    
     // drag button
     private var dragButton: some View {
         VStack(spacing: 0) {

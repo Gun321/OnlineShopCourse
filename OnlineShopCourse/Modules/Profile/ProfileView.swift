@@ -162,6 +162,7 @@ extension ProfileView {
                 myColorTheme.saveColor(color: newParentColor, forKey: "parent_color")
             }
     }
+    
     // child color picker
     private var childColorPicker: some View {
         ColorPicker(selection: $childColor, supportsOpacity: true, label: { })
@@ -170,6 +171,7 @@ extension ProfileView {
                 myColorTheme.saveColor(color: newChildColor, forKey: "child_color")
             }
     }
+    
     // default color theme
     private var defaultColorTheme: some View {
         Button(action: {

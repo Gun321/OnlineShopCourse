@@ -105,7 +105,7 @@ class CartViewModel: ObservableObject {
     // MARK: upload order
     func uploadOrder() {
         loader(deadLine: 15.0)
-        guard let user = getUser() else { return }
+        guard let user = uploadOrderStatus() else { return }
         userDataService.uploadUserData(user: user) { result in
             switch result {
             case .success(let user):
